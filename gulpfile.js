@@ -1,0 +1,25 @@
+//1.通过require()导入所需插件
+var gulp = require('gulp'),
+	   uglify = require('gulp-uglify') ,
+	   cssnano = require('gulp-cssnano'),
+	   rename = require('gulp-rename'),
+	   sass = require('gulp-sass'),
+	   imagemin = require('gulp-imagemin');
+//2.创建并发布任务
+
+gulp.task('sass',function(){
+	gulp.src('./src/sass/*.scss')
+	.pipe(sass())
+	.pipe(rename({"suffix" : ".min"}))
+	.pipe(gulp.dest('./dist/css'));
+})
+gulp.task('imagemin',function(){
+	gulp.src('./src/img/indeximg/*')
+	.pipe(imagemin())
+	.pipe(rename({"suffix" : ".min"}))
+	.pipe(gulp.dest('./dist/img/indeximg'));
+})
+gulp.task('default',function(){
+	gulp.watch('./src/sass/*.scss',['sass']);
+})
+
