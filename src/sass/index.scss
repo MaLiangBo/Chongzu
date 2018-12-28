@@ -1,1 +1,70 @@
 @import 'public';
+.banner{
+    height:325px;
+    background:#f8f8f8;
+    padding:0 40px 0 32px;
+}
+.banner {
+    .box{
+    margin:0 auto;
+    height:325px;
+         .nav{
+            height:315px;
+            width:187px;
+            background:linear-gradient(to right top,#fe9307,#ff5300);
+            border:1px solid #f05304;
+            border-top:0;
+            position: absolute;
+            top:281px;
+            left:32px;
+            border-radius:0 0 8px 8px ;
+            div{
+                width:171px;
+                height:60px;
+                margin:1px auto;
+            }
+            ul{
+                height:60px;
+                background:#ffffff;
+                a{
+                    display:inline-block;
+                    font-size:15px;
+                    color:#173223;
+                }
+            }
+            .nav2 ul li:nth-of-type(1) a{
+                width:30px;
+                height:30px;
+                background:url(../img/indeximg/dogcat.min.png) no-repeat -198px 3px;
+                margin:15px 18px 0 24px;
+            }
+            .nav2 ul li:nth-of-type(2) a{
+                line-height:60px;
+            }
+            .nav2 ul li:nth-of-type(3) a{
+                width:15px;
+                height:15px;
+                background:url(../img/indeximg/dogcat.min.png) no-repeat -375px -12px;
+                margin:22px 0 0 24px
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
