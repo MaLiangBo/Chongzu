@@ -14,10 +14,8 @@
             background:linear-gradient(to right top,#fe9307,#ff5300);
             border:1px solid #f05304;
             border-top:0;
-            position: absolute;
-            top:281px;
-            left:32px;
             border-radius:0 0 8px 8px ;
+            float:left;
             div{
                 width:171px;
                 height:60px;
@@ -46,6 +44,138 @@
                 height:15px;
                 background:url(../img/indeximg/dogcat.min.png) no-repeat -375px -12px;
                 margin:22px 0 0 24px
+            }
+            .nav3 ul li:nth-of-type(1) a{
+                width:30px;
+                height:30px;
+                background:url(../img/indeximg/dogcat.min.png) no-repeat -229px 3px;
+                margin:15px 18px 0 24px;
+            }
+            .nav3 ul li:nth-of-type(2) a{
+                line-height:60px;
+            }
+            .nav3 ul li:nth-of-type(3) a{
+                width:15px;
+                height:15px;
+                background:url(../img/indeximg/dogcat.min.png) no-repeat -375px -12px;
+                margin:22px 0 0 24px
+            }
+            .nav4 ul li:nth-of-type(1) a{
+                width:30px;
+                height:30px;
+                background:url(../img/indeximg/dogcat.min.png) no-repeat -260px 3px;
+                margin:15px 18px 0 24px;
+            }
+            .nav4 ul li:nth-of-type(2) a{
+                line-height:60px;
+            }
+            .nav4 ul li:nth-of-type(3) a{
+                width:15px;
+                height:15px;
+                background:url(../img/indeximg/dogcat.min.png) no-repeat -375px -12px;
+                margin:22px 0 0 24px
+            }
+            .nav5 ul li:nth-of-type(1) a{
+                width:30px;
+                height:30px;
+                background:url(../img/indeximg/dogcat.min.png) no-repeat -291px 3px;
+                margin:15px 18px 0 24px;
+            }
+            .nav5 ul li:nth-of-type(2) a{
+                line-height:60px;
+            }
+            .nav5 ul li:nth-of-type(3) a{
+                width:15px;
+                height:15px;
+                background:url(../img/indeximg/dogcat.min.png) no-repeat -375px -12px;
+                margin:22px 0 0 24px
+            }
+            .nav6 ul li:nth-of-type(1) a{
+                width:30px;
+                height:30px;
+                background:url(../img/indeximg/dogcat.min.png) no-repeat -321px 3px;
+                margin:15px 18px 0 24px;
+            }
+            .nav6 ul li:nth-of-type(2) a{
+                line-height:60px;
+            }
+            .nav6 ul li:nth-of-type(3) a{
+                width:15px;
+                height:15px;
+                background:url(../img/indeximg/dogcat.min.png) no-repeat -375px -12px;
+                margin:22px 0 0 24px
+            }
+        }
+        #carousel{
+            width:702px;
+            height:305px;
+            float:left;
+            background:red;
+            margin-left:13px;
+            overflow: hidden;
+            position: relative;
+            #pic li{
+                position:absolute;
+                top:0;
+                left:0;
+            }
+            #bd{
+                height:30px;
+                position:absolute;
+                top:273px;
+                left:583px;
+                li a{
+                   width:10px;
+                   height:10px;
+                   background:#e4e3de;
+                   margin-left:10px;
+                   border-radius: 50%;
+                }  
+            }
+        }
+        .zixun{
+            float:right;
+            width:280px;
+            height:305px;
+            .chongzuzi{
+                height:36px;
+                padding-top:15px;
+                 position: relative;
+               .zixun_left{
+                   width:140px;
+                   height:30px;
+                   background:url(../img/indeximg/dogcat.min.png) no-repeat -192px -32px;
+                   margin-left:12px;
+               }
+               .zixun_right{
+                   width:48px;
+                   height:22px;
+                   color:#000000;
+                   display:inline-block;
+                   position: absolute;
+                   top:13px;
+                   right:17px;
+                   a{
+                       color:#000000;font-size:14px;
+                   }
+                   a:nth-of-type(2){
+                       display:inline-block;
+                       width:15px;
+                       height:20px;
+                       background:url(../img/indeximg/dogcat.min.png) no-repeat -376px 10px; 
+                   }
+               }
+               .zixun_right:hover a{
+                   color:#ff5500;
+               }
+            }
+            ul{
+                height:254px;
+                li{
+                    height:80px;
+                    width:100%;
+                    border-top:1px solid #e7e7e7;
+                }
             }
         }
     }

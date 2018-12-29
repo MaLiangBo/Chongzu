@@ -20,7 +20,14 @@ gulp.task('imagemin',function(){
 	.pipe(rename({"suffix" : ".min"}))
 	.pipe(gulp.dest('./dist/img/indeximg'));
 })
+gulp.task('js',function(){
+	gulp.src('./src/js/*.js')
+	.pipe(uglify())
+	.pipe(rename({"suffix" : ".min"}))
+	.pipe(gulp.dest('./dist/js'))
+})
 gulp.task('default',function(){
 	gulp.watch('./src/sass/*.scss',['sass']);
+	gulp.watch('./src/js/*.js',['js']);
 })
 
