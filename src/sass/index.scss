@@ -219,11 +219,11 @@ body{
 }
 .time{
     height:360px;
-    background:#FFFFFF;
     .stime{
         height:360px;
         width:1200px;
-        margin:0 auto;
+        margin:0 auto;   
+        background:#FFFFFF;
         .time_left{
             width:233px;
             height:360px;
@@ -357,7 +357,6 @@ body{
             width:804px;
             height:401px;
             float:right;
-            background:pink;
             ul{
                 li{
                     width:200px;
@@ -394,21 +393,600 @@ body{
     height:46px;
     margin-top:10px;
     .sdog_top{
-        width:1200px;
+        overflow: hidden;
+        width:1202px;
         height:46px;
         background:#ffa500;
         margin:0 auto;
         border-radius: 10px 10px 0 0;
+        .ssdog{
+            height:30px;
+            width:150px;
+            margin:12px auto;
+            font-size:21px;
+            color:#fefcff;
+            text-align:center;
+            .ssdog_left{
+                display: inline-block;
+                height:23px;
+                width:23px;
+                background:url(../img/indeximg/ohmygod.min.png) no-repeat -7px -11px;
+            }
+            .ssdog_right{
+                display:inline-block;
+                height:23px;
+                width:23px;
+                background:url(../img/indeximg/ohmygod.min.png) no-repeat -7px -11px;
+            }
+        }
+    }
+}
+.dog_bottom{
+    height:483px;
+    .dog_content{
+        height:483px;
+        width:1200px;
+        margin:0 auto;
+        border:1px solid #ffa300;
+        border-top:0;
+        .Tdog_content{
+            height:403px;
+            .Tdog_content_left{
+                width:395px;
+                height:401px;
+                border-right:1px solid #e8e8e8;
+                border-top:1px solid #e8e8e8;
+                overflow: hidden;
+                float:left;
+                img{
+                    width:100%;
+                    height:100%;
+                    transition:0.5s linear;
+                }
+            }
+            .Tdog_content_left:hover img{
+                transform:scale(1.1);
+            }
+            .Tdog_content_right{
+                width:804px;
+                height:401px;
+                float:right;
+                ul{
+                    li{
+                        width:200px;
+                        height:200px;
+                        border-top:1px solid #e8e8e8;
+                        border-right:1px solid #e8e8e8;
+                        overflow: hidden;
+                        img{
+                            width:100%;
+                            height:100%;
+                            transition:0.5s linear;
+                        }
+                    }
+                    li:hover img{
+                        transform: scale(1.1);
+                    }
+                    li:nth-of-type(4n){
+                        border-right:0;
+                    }
+                }
+            }
+        }
+        .Bdog_content{
+            height:80px;
+            overflow: hidden;
+            background:#ffffff;
+            ul{
+                width:1179px;
+                height:64px;
+                margin:7px auto;
+                li:nth-of-type(2n+1){
+                    height:64px;
+                    width:130px;
+                    a{
+                        display: inline-block;
+                        width:130px;
+                        height:64px;
+                        img{
+                            width:100%;
+                            height:100%;
+                        }
+                    }
+                }
+            }    
+        }
+    }
+}
+.cat{
+    height:530px;
+    margin-top:10px;
+    .scat{
+        height:530px;
+        width:1200px;
+        margin:0 auto;
+        border:1px solid #db6ed7;
+        border-radius: 10px 10px 0 0;
+        .cat_top{
+            overflow: hidden;
+            height:46px;
+            border-radius: 10px 10px 0 0;
+            background:#db6ed7;
+            .scat_top{
+                height:30px;
+                width:150px;
+                margin:9px auto;
+                font-size:21px;
+                color:#fefcff;
+                text-align:center;
+                .scat_left{
+                    display: inline-block;
+                    height:23px;
+                    width:23px;
+                    background:url(../img/indeximg/ohmygod.min.png) no-repeat -82px -11px;
+                }
+                .scat_right{
+                    display:inline-block;
+                    height:23px;
+                    width:23px;
+                    background:url(../img/indeximg/ohmygod.min.png) no-repeat -82px -11px;
+                }
+            }
+        }
+        .cat_content{
+            height:403px;
+            .cat_content_left{
+                width:395px;
+                height:401px;
+                border-right:1px solid #e8e8e8;
+                border-top:1px solid #e8e8e8;
+                overflow: hidden;
+                float:left;
+                img{
+                    width:100%;
+                    height:100%;
+                    transition:0.5s linear;
+                }
+            }
+            .cat_content_left:hover img{
+                transform:scale(1.1);
+            }
+            .cat_content_right{
+                width:804px;
+                height:401px;
+                float:right;
+                ul{
+                    li{
+                        width:200px;
+                        height:200px;
+                        border-top:1px solid #e8e8e8;
+                        border-right:1px solid #e8e8e8;
+                        overflow: hidden;
+                        img{
+                            width:100%;
+                            height:100%;
+                            transition:0.5s linear;
+                        }
+                    }
+                    li:hover img{
+                        transform: scale(1.1);
+                    }
+                    li:nth-of-type(4n){
+                        border-right:0;
+                    }
+                }
+            }
+        }
+        .cat_bottom{
+            height:80px;
+            overflow: hidden;
+            background:#ffffff;
+            ul{
+                width:1179px;
+                height:64px;
+                margin:7px auto;
+                li:nth-of-type(2n+1){
+                    height:64px;
+                    width:130px;
+                    a{
+                        display: inline-block;
+                        width:130px;
+                        height:64px;
+                        img{
+                            width:100%;
+                            height:100%;
+                        }
+                    }
+                }
+            }    
+        }
     }
 }
 
+.water{
+    height:530px;
+    margin-top:10px;
+    .swater{
+        height:530px;
+        width:1200px;
+        margin:0 auto;
+        border:1px solid #20b1aa;
+        border-radius: 10px 10px 0 0;
+        .water_top{
+            overflow: hidden;
+            height:46px;
+            border-radius: 10px 10px 0 0;
+            background:#20b1aa;
+            .swater_top{
+                height:30px;
+                width:150px;
+                margin:9px auto;
+                font-size:21px;
+                color:#fefcff;
+                text-align:center;
+                .swater_left{
+                    display: inline-block;
+                    height:23px;
+                    width:23px;
+                    background:url(../img/indeximg/ohmygod.min.png) no-repeat -157px -11px;
+                }
+                .swater_right{
+                    display:inline-block;
+                    height:23px;
+                    width:23px;
+                    background:url(../img/indeximg/ohmygod.min.png) no-repeat -157px -11px;
+                }
+            }
+        }
+        .water_content{
+            height:403px;
+            .water_content_left{
+                width:395px;
+                height:401px;
+                border-right:1px solid #e8e8e8;
+                border-top:1px solid #e8e8e8;
+                overflow: hidden;
+                float:left;
+                img{
+                    width:100%;
+                    height:100%;
+                    transition:0.5s linear;
+                }
+            }
+            .water_content_left:hover img{
+                transform:scale(1.1);
+            }
+            .water_content_right{
+                width:804px;
+                height:401px;
+                float:right;
+                ul{
+                    li{
+                        width:200px;
+                        height:200px;
+                        border-top:1px solid #e8e8e8;
+                        border-right:1px solid #e8e8e8;
+                        overflow: hidden;
+                        img{
+                            width:100%;
+                            height:100%;
+                            transition:0.5s linear;
+                        }
+                    }
+                    li:hover img{
+                        transform: scale(1.1);
+                    }
+                    li:nth-of-type(4n){
+                        border-right:0;
+                    }
+                }
+            }
+        }
+        .water_bottom{
+            width:1200px;
+            height:81px;
+            img{
+                width:100%;
+                height:100%;
+            }    
+        }
+    }
+}
 
+.pet{
+    height:530px;
+    margin-top:10px;
+    .spet{
+        height:530px;
+        width:1200px;
+        margin:0 auto;
+        border:1px solid #c9ee00;
+        border-radius: 10px 10px 0 0;
+        .pet_top{
+            overflow: hidden;
+            height:46px;
+            border-radius: 10px 10px 0 0;
+            background:#c9ee00;
+            .spet_top{
+                height:30px;
+                width:150px;
+                margin:9px auto;
+                font-size:21px;
+                color:#fefcff;
+                text-align:center;
+                .spet_left{
+                    display: inline-block;
+                    height:23px;
+                    width:23px;
+                    background:url(../img/indeximg/ohmygod.min.png) no-repeat -7px -59px;
+                }
+                .spet_right{
+                    display:inline-block;
+                    height:23px;
+                    width:23px;
+                    background:url(../img/indeximg/ohmygod.min.png) no-repeat -7px -59px;
+                }
+            }
+        }
+        .pet_content{
+            height:403px;
+            .pet_content_left{
+                width:395px;
+                height:401px;
+                border-right:1px solid #e8e8e8;
+                border-top:1px solid #e8e8e8;
+                overflow: hidden;
+                float:left;
+                img{
+                    width:100%;
+                    height:100%;
+                    transition:0.5s linear;
+                }
+            }
+            .pet_content_left:hover img{
+                transform:scale(1.1);
+            }
+            .pet_content_right{
+                width:804px;
+                height:401px;
+                float:right;
+                ul{
+                    li{
+                        width:200px;
+                        height:200px;
+                        border-top:1px solid #e8e8e8;
+                        border-right:1px solid #e8e8e8;
+                        overflow: hidden;
+                        img{
+                            width:100%;
+                            height:100%;
+                            transition:0.5s linear;
+                        }
+                    }
+                    li:hover img{
+                        transform: scale(1.1);
+                    }
+                    li:nth-of-type(4n){
+                        border-right:0;
+                    }
+                }
+            }
+        }
+        .pet_bottom{
+            width:1200px;
+            height:81px;
+            img{
+                width:100%;
+                height:100%;
+            }    
+        }
+    }
+}
 
+.else{
+    height:530px;
+    margin-top:10px;
+    .selse{
+        height:530px;
+        width:1200px;
+        margin:0 auto;
+        border:1px solid #fe93bd;
+        border-radius: 10px 10px 0 0;
+        .else_top{
+            overflow: hidden;
+            height:46px;
+            border-radius: 10px 10px 0 0;
+            background:#fe93bd;
+            .selse_top{
+                height:30px;
+                width:150px;
+                margin:9px auto;
+                font-size:21px;
+                color:#fefcff;
+                text-align:center;
+                .selse_left{
+                    display: inline-block;
+                    height:23px;
+                    width:23px;
+                    background:url(../img/indeximg/ohmygod.min.png) no-repeat -82px -59px;
+                }
+                .selse_right{
+                    display:inline-block;
+                    height:23px;
+                    width:23px;
+                    background:url(../img/indeximg/ohmygod.min.png) no-repeat -82px -59px;
+                }
+            }
+        }
+        .else_content{
+            height:403px;
+            .else_content_left{
+                width:395px;
+                height:401px;
+                border-right:1px solid #e8e8e8;
+                border-top:1px solid #e8e8e8;
+                overflow: hidden;
+                float:left;
+                img{
+                    width:100%;
+                    height:100%;
+                    transition:0.5s linear;
+                }
+            }
+            .else_content_left:hover img{
+                transform:scale(1.1);
+            }
+            .else_content_right{
+                width:804px;
+                height:401px;
+                float:right;
+                ul{
+                    li{
+                        width:200px;
+                        height:200px;
+                        border-top:1px solid #e8e8e8;
+                        border-right:1px solid #e8e8e8;
+                        overflow: hidden;
+                        img{
+                            width:100%;
+                            height:100%;
+                            transition:0.5s linear;
+                        }
+                    }
+                    li:hover img{
+                        transform: scale(1.1);
+                    }
+                    li:nth-of-type(4n){
+                        border-right:0;
+                    }
+                }
+            }
+        }
+        .else_bottom{
+            width:1200px;
+            height:81px;
+            img{
+                width:100%;
+                height:100%;
+            }    
+        }
+    }
+}
+.qita{
+    height:43px;
+    .cai{
+        width:250px;
+        height:43px;
+        margin:0 auto;
+        i{
+            display: inline-block;
+            vertical-align: middle;
+            width: 66px;
+            height: 1px;
+            line-height:43px;
+            background: #dddddd;
+        }
+        p{
+            font-size: 21px;
+            display: inline-block;
+            vertical-align: middle;
+            color: #252525;
+            padding: 0px 12px;
+            line-height:43px;
+        }
+    }
+}
+.like{
+    height:1645px;
 
-
-
-
-
-
-
-
+    .slike{
+        width:1205px;
+        height:1645px;
+        margin:0 auto;
+        ul{
+        width:1205px;
+        height:1645px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        li:hover{border:1px solid #ff5601}
+            li{
+                height:308px;
+                width:219px;
+                border:1px solid #e8e8e8;
+                padding:6px;
+                background:#ffffff;
+                a{
+                    img{
+                        display: block;
+                        width:219px;
+                        height:219px;
+                    }
+                }
+                p{
+                    line-height:18px;
+                    margin-top:10px;
+                    a{
+                    font-size:14px;
+                    color:#252525;
+                    }
+                }
+                .sslike{
+                    height:25px;
+                    margin-top:10px;
+                    span:nth-of-type(1){
+                        float:left;
+                        font-size: 21px;
+                        color: #e60012;
+                        height:25px;
+                        display: inline-block;
+                    }
+                    span:nth-of-type(2){
+                        display: inline-block;
+                        cursor: pointer;
+                        left: 145px;
+                        width: 71px;
+                        height: 30px;
+                        text-align: center;
+                        line-height: 30px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        font-size: 14px;
+                        color: #333;
+                        background: #f8f8f8;
+                        border-radius: 15px;
+                        float:right;
+                    }
+                    span:nth-of-type(2):hover{
+                        background:#fea501;
+                        color:#FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+}
+.end{
+    height:83px;
+    overflow: hidden;
+    .send{
+        height:83px;
+        width:230px;
+        margin:27px auto;
+        i{
+            display: inline-block;
+            vertical-align: middle;
+            width: 66px;
+            height: 1px;
+            background: #dddddd;
+        }
+        p{
+            display: inline-block;
+            padding: 0px 12px;
+            font-size: 24px;
+            vertical-align: middle;
+            color: #e8e8e8;
+        }
+    }
+}
