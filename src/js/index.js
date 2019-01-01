@@ -33,7 +33,12 @@ for(var i = 0,len = oSmallPic.length;i < len; i ++){
 //设置图片轮播
 function slider(){
 	//大图轮播
-	oBigPic[indexA].style.zIndex = ++ zIndex;
+	for(var i = 0,len = oSmallPic.length;i < len; i ++){
+		oSmallPic[i].style.background = "";
+		oSmallPic[i].index = i;
+		oBigPic[indexA].style.zIndex = ++ zIndex;
+		oSmallPic[indexA].style.background = "#ff7f0d";
+	}
 }
 function autoplay(){
 	clearInterval(timer);

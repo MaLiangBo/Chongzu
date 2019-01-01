@@ -1,0 +1,75 @@
+@import 'public'; 
+.header{
+    height:147px;
+    header{
+        height:147px;
+        width:1200px;
+        margin:0 auto;
+        img{
+            margin-top:40px;
+            float:left;
+        }
+        p{
+            float:left;
+            font-size: 24px;
+            color: #252525;
+            margin-top: 63px;
+            margin-left:30px;
+        }
+    }
+}
+.content{
+    height:720px;
+    background:#f8f8f8;
+    .form_input{
+        width: 540px;
+        margin: 0 auto;
+        text-align: center;
+        ul{
+            padding-top: 20px;
+            text-align: center;
+            li{
+                margin-top: 20px;
+                height: 58px;
+                position: relative;
+                lable{
+                    width: 110px;
+                    font-size: 18px;
+                    color: #252525;
+                    line-height: 60px;
+                    text-align: right;
+                    float: left;
+                    margin-right: 20px;
+                    outline: none;
+                }
+                #zhuce_form_phone{
+                    width: 390px;
+                    line-height: 38px;
+                    background: #fff;
+                    padding: 10px 0;
+                    float: left;
+                    padding-left: 18px;
+                    border: 1px solid #efefef;
+                    font-size: 16px;
+                    color: #252525;
+                    border-color: rgb(230, 0, 18);
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

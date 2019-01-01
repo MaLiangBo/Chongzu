@@ -2,8 +2,93 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/login.min.css"/>
+		<title>欢迎登录-宠族网</title>
 	</head>
 	<body>
+		<div class = "header">
+			<header>
+				<a href="#"><img src="../img/indeximg/logo.min.png"/></a>
+				<p>欢迎注册</p>
+			</header>
+		</div>
+		<div class = "banner">
+			<div class = "denglu">
+				<div class = "denglu_left">
+					<h3>爱它就给它最好的</h3>
+					<p>宠族 - 专注于宠物行业的电商服务平台</p>
+				</div>
+				<div class = "denglu_right">
+					<ul class = "denglu_top">
+						<li class = "dtop_left">账号登录</li>
+						<li class = "dtop_right">手机号快捷登录</li>
+					</ul>
+					<from>
+						<div class = "account" style = "display: block;">
+							<div class = "username">
+								<span class = "username_bg">	</span>
+								<input type="text" name="username-input" id="username-input" value=""  placeholder="请输入手机号/账号"/>
+							</div>
+							<div class = "password">
+								<span class = "password_bg"></span>
+								<input type="password" name="password-input" id="password-input" value=""  placeholder="请输入密码"/>
+							</div>
+							<div class = "cuowu">
+								<img src="../img/loginimg/error.min.png" />
+								<p>请输入正确的用户名</p>
+							</div>
+							<div class = "login_auto">
+								<a href="javascript:;" class = "auto">自动登录</a>
+								<a href="#" class = "wangji">忘记密码</a>
+							</div>
+							<div class = "dengludianji">
+								<a href="javascript:;" id = "checklogin">登 录</a>
+							</div>
+							<div class = "weChat">
+								<a href="javascript:;" class = "wx">微信登录</a>
+								<a href="javascript:;" class = "login_zhuce">注册账号</a>
+							</div>
+							
+							
+						</div>
+						<!--<div class = "phone">
+							<input type="text" name="phone_login" id="phone_login" value="" placeholder="请输入手机号" />
+						</div>-->
+						<!--<div class = "yanzheng">
+							<input type="text" name= "yanzheng_login" id="yanzheng_login" value="" placeholder="验证码" />
+							<a href="javascript:;">
+								<img src="../img/registrationimg/0.9110604246970078.min.png"/>
+							</a>
+						</div>-->
+					
+					</from>
+				</div>
+			</div>
+		</div>
+		<footer></footer>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<script src="../js/jquery-1.11.3.js"></script>
+		<script src="../js/jquery.cookie.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('.auto').click(
+					function(){
+						$(this).css({"background-position" : "-80px -21px"});
+					}
+				)
+				$('footer').load("Footer_.html")
+			})
+
+		</script>
 	</body>
 </html>

@@ -127,6 +127,7 @@ body{
                 top:273px;
                 left:583px;
                 li a{
+                   display: inline-block;
                    width:10px;
                    height:10px;
                    background:#e4e3de;
@@ -316,7 +317,101 @@ body{
 }
 .sale_content{
     height:321px;
-    background:pink;
+    .ssale_content{
+        width:1200px;
+        height:321px;
+        margin:0 auto;
+//      overflow: hidden;
+        position:relative;
+        .click_one{
+            width:42px;
+            height:42px;
+            position: absolute;
+            left:-20px;
+            top:140px;
+            background:url(../img/indeximg/slider.min.png) no-repeat 0 0;
+            a{
+                display: inline-block;
+                width:42px;
+                height:42px;
+            }
+        }
+        .click_two{
+            width:42px;
+            height:42px;
+            position: absolute;
+            right:-20px;
+            top:140px;
+            background:url(../img/indeximg/slider.min.png) no-repeat -44px 0;
+             a{
+                display: inline-block;
+                width:42px;
+                height:42px;
+            }
+        }
+        ul{
+        width:1200px;
+        height:321px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        li:hover{border:1px solid #ff5601}
+            li{
+                height:308px;
+                width:219px;
+                border:1px solid #e8e8e8;
+                padding:6px;
+                background:#ffffff;
+                a{
+                    img{
+                        display: block;
+                        width:219px;
+                        height:219px;
+                    }
+                }
+                p{
+                    line-height:18px;
+                    margin-top:10px;
+                    a{
+                    font-size:14px;
+                    color:#252525;
+                    }
+                }
+                .ssale{
+                    height:25px;
+                    margin-top:10px;
+                    span:nth-of-type(1){
+                        float:left;
+                        font-size: 21px;
+                        color: #e60012;
+                        height:25px;
+                        display: inline-block;
+                    }
+                    span:nth-of-type(2){
+                        display: inline-block;
+                        cursor: pointer;
+                        left: 145px;
+                        width: 71px;
+                        height: 30px;
+                        text-align: center;
+                        line-height: 30px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        font-size: 14px;
+                        color: #333;
+                        background: #f8f8f8;
+                        border-radius: 15px;
+                        float:right;
+                    }
+                    span:nth-of-type(2):hover{
+                        background:#fea501;
+                        color:#FFFFFF;
+                    }
+                }
+            }
+        }
+    }
 }
 .remai{
     height:61px;

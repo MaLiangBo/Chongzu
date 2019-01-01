@@ -1,0 +1,277 @@
+@import 'public';
+.header{
+    height:147px;
+    header{
+        height:147px;
+        width:1200px;
+        margin:0 auto;
+        img{
+            margin-top:40px;
+            float:left;
+        }
+        p{
+            float:left;
+            font-size: 24px;
+            color: #252525;
+            margin-top: 63px;
+            margin-left:30px;
+        }
+    }
+}
+.banner{
+    height:550px;
+    border-top:1px solid #ff8808;
+    background:url(../img/loginimg/login-bg.min.jpg) -320px;
+    .denglu{
+        width:1200px;
+        margin:0 auto;
+        margin-top:39px;
+        .denglu_left{
+            float:left;
+            width: 634px;
+            text-align: center;
+            margin-top: 160px;
+            height: 247px;
+            h3{
+                font-size: 30px;
+                color: #ffffff;
+                line-height: 56px;
+                font-weight: normal;
+            }
+            p{
+                line-height: 47px;
+                font-size: 18px;
+                color: #ffffff;
+            }
+        }
+        .denglu_right{
+            float:right;
+            width: 348px;
+            background: #fff;
+            padding-top: 10px;
+            padding-bottom: 32px;
+            ul{
+                height:45px;
+                .dtop_left{
+                    border-bottom: 1px solid #ff5500;
+                    color: #ff5500;
+                    font-size: 18px;
+                    width: 174px;
+                    float: left;
+                    line-height: 45px;
+                    text-align: center;
+                    cursor: pointer;
+                }
+                .dtop_right{
+                    width: 174px;
+                    float: left;
+                    line-height: 45px;
+                    font-size: 16px;
+                    text-align: center;
+                    cursor: pointer;
+                }
+            }
+            .account{
+                width: 308px;
+                margin: 0 auto;
+                margin-top: 12px;
+                .username{
+                    width: 305px;
+                    height: 38px;
+                    border: 1px solid #ececec;
+                    border-radius: 5px;
+                    background: #f8f8f8;
+                    margin-top: 20px;
+                    position: relative;
+                    .username_bg{
+                        width: 40px;
+                        height: 38px;
+                        background: url(../img/loginimg/login-icon.min.png) no-repeat 0 0;
+                        float: left;
+                    }
+                    input{
+                        float: left;
+                        border: none;
+                        width: 258px;
+                        background: #fff;
+                        height: 18px;
+                        padding: 10px 0px;
+                        padding-left: 6px;
+                        color: #252525;
+                        line-height: 18px;
+                        font-size: 14px;
+                    }
+                }
+                .password{
+                    width: 305px;
+                    height: 38px;
+                    border: 1px solid #ececec;
+                    border-radius: 5px;
+                    background: #f8f8f8;
+                    margin-top: 20px;
+                    position: relative;
+                    .password_bg{
+                        width: 40px;
+                        height: 38px;
+                        background: url(../img/loginimg/login-icon.min.png) no-repeat -40px 0;
+                        float: left;
+                    }
+                    input{
+                        float: left;
+                        border: none;
+                        width: 258px;
+                        background: #fff;
+                        height: 18px;
+                        padding: 10px 0px;
+                        padding-left: 6px;
+                        color: #252525;
+                        line-height: 18px;
+                        font-size: 14px;
+                    }
+                }
+                .cuowu{
+                    display:none;
+                    width: 305px;
+                    height: 20px;
+                    background: #ffebeb;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    border-radius: 3px;
+                    border: 1px solid #ffc6be;
+                    img{
+                        margin-left: 15px;
+                        margin-top: 2px;
+                        vertical-align: top;
+                         max-width: 100%;
+                    }
+                    p{
+                        display:inline-block;
+                        line-height: 20px;
+                        margin-left: 5px;
+                        color: rgb(231, 4, 22);
+                    }
+                }
+                .login_auto{
+                    height: 16px;
+                    line-height: 16px;
+                    margin-top: 18px;
+                    .auto{
+                        padding-left: 24px;
+                        display: block;
+                        float: left;
+                        background: url(../img/loginimg/login-icon.min.png) no-repeat -80px 0;
+                        font-size: 14px;
+                        color: #252525;
+                    }
+                     .wangji{
+                        font-size: 14px;
+                        color: #666666;
+                        display: block;
+                        float: right;
+                    }
+                }
+                .dengludianji{
+                    margin-top: 19px;
+                    a{
+                        height: 46px;
+                        line-height: 46px;
+                        background: #ff5500;
+                        color: #ffffff;
+                        text-align: center;
+                        display: block;
+                    }
+                }
+                .weChat{
+                    height: 32px;
+                    line-height: 32px;
+                    margin-top: 10px;
+                    .wx{
+                        padding-left: 40px;
+                        display: block;
+                        float: left;
+                        background: url(../img/loginimg/login-icon.min.png) no-repeat 0 -38px;
+                        font-size: 14px;
+                        color: #252525;
+                         line-height: 32px;
+                    }
+                    .login_zhuce{
+                        font-size: 14px;
+                        color: #ff5500;
+                        text-decoration: underline;
+                        float: right;
+                    }
+                }
+            }
+//          .phone{
+//             width: 305px;
+//              height: 38px;
+//              border: 1px solid #ececec;
+//              border-radius: 5px;
+//              background: #f8f8f8;
+//              margin-top: 20px;
+//              position: relative;
+//              #phone_login{
+//                  width: 285px;
+//                  padding-left: 20px;
+//                  float: left;
+//                  border: none;
+//                  background: #fff;
+//                  height: 18px;
+//                  padding: 10px 0px;
+//                  color: #252525;
+//                  line-height: 18px;
+//                  font-size: 14px;
+//              }
+//          }
+//          .yanzheng{
+//              width: 305px;
+//              height: 38px;
+//              border: 1px solid #ececec;
+//              border-radius: 5px;
+//              background: #f8f8f8;
+//              margin-top: 20px;
+//              position: relative;
+//              .yanzheng_login{
+//                  width: 215px;
+//                  padding-left: 20px;
+//                  float: left;
+//                  border: none;
+//                  border: none;
+//                  background: #fff;
+//                  height: 18px;
+//                  padding: 10px 0px;
+//                  color: #252525;
+//                  line-height: 18px;
+//                  font-size: 14px;
+//              }
+//              img{
+//                  margin-left: 3px;
+//                   border-radius: 5px;
+//                   border: none;
+//                  vertical-align: top;
+//                  max-width: 100%;
+//              }
+//          }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
