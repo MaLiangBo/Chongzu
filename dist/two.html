@@ -1,0 +1,303 @@
+<!doctype html>
+<html>
+		<head>
+				<meta charset="utf-8">
+				<style>
+						html,body{
+									height:100%;
+									width:100%;
+						}
+						body,ul,p,input,h1,h2,h3,h4{
+									margin:0;
+									padding:0;
+						}
+						.wrap{
+									width:1000px;
+									margin:40px auto 0;
+									height:100%;
+									position:relative;
+									
+						}
+						.main{
+									
+									overflow: hidden;
+								 	
+							
+						}
+						.left{
+									width:200px;
+									overflow:hidden;
+									position:absolute;
+									left:0;
+									top:0;
+									
+						}
+					
+						.ulsit{
+									
+									list-style:none;
+									overflow:hidden;
+									background: #fff;
+									
+						}
+						.ulsit li{
+									margin-left:20px;
+									font-size:12px;
+									line-height:24px;
+									
+						}
+						a{
+									text-decoration:none;
+									color:gray;
+						}
+						i{
+									font-style:normal;
+						}
+						
+						.right{
+									position:absolute;
+									left:201px;
+									width:799px;
+									overflow:hidden;
+									
+									
+						}
+						.right p{
+						
+									
+									height:30px;
+									margin-top:15px;
+									margin-left:20px;
+									
+									font-size:14px;
+									line-height:30px;
+									color:#fff;
+						}
+						.right p span{
+										display:block;
+										float:left;
+										padding:0 8px;
+										height:30px;
+										margin-right:20px;
+										background:black;
+										cursor:pointer;
+										
+										
+						}
+						.right p span i{
+										margin-left:5px;
+						}
+						.box1{
+										
+									 
+									 margin-top:10px;
+									 margin-bottom:10px;
+									 margin-left:10px;
+									 overflow:hidden;
+						}
+						.box1 span{
+										font-size:14px;
+										line-height:30px;
+										color:#767676;
+										
+										
+						}
+						.box1  a{
+										font-size:12px;
+										margin-left:12px;
+						}
+						
+				</style>
+		</head>
+		<body>
+				<div class="wrap">
+				<div class="main" id="main">
+						<div class="left">
+								<ul class="ulsit" id="ulsit">
+								</ul>
+						</div>
+						
+				</div>
+				</div>
+				<script>
+							
+							
+							var  oU = document.getElementById('ulsit');
+							var  main = document.getElementById('main');
+							var oRight = document.getElementById('right');
+							var  oP1=document.getElementById('p1');
+							var ajax ={};
+							ajax.get = function(url,fn){
+								var  xhr =  new XMLHttpRequest();
+								xhr.open('GET',url,true);
+								xhr.send();
+								xhr.onreadystatechange = function(){
+									 if(xhr.readyState == 4 && xhr.status == 200){
+									   if(typeof fn == 'function'){
+											fn(xhr.responseText);
+									   }
+									 }
+								}
+							}
+							ajax.get('jd2.json?t='+new Date().getTime(),function(str){
+								 var json = (new Function('return'+ str))();
+								 var arr2 =[]; 
+								 var arr3 = [];
+								 //左边的ul的生成
+									 for(var arr in json ){
+												arr3.push(arr);
+												var li = document.createElement('li');
+												var arr2 = arr.split(' ');
+												for(var j = 0,len=arr2.length;j<len;j++){
+													var a = document.createElement('a');
+													a.href="#";
+													a.innerHTML = arr2[j];
+													li.appendChild(a);
+												}
+											   
+												 oU.appendChild(li);
+											
+											}
+											
+									//右边的div创建以及第一行p的插入 span		
+										for(var b=0,lens= arr3.length;b<lens;b++){
+												
+												 var boxs = document.createElement('div');
+												 boxs.id = b+1 ;
+												 boxs.className = 'right';
+												 boxs.style.display='none';
+												 var p = document.createElement('p');
+												 boxs.appendChild(p);
+											//	 
+												 
+												 
+												 
+												 main.appendChild(boxs);
+												 for(var sp  in json){
+												    if(sp == arr3[b]){
+														//console.log(json[sp].length);
+														for(var sp1=0,lens2=json[sp].length;sp1 <lens2;sp1++ ){
+															 var s = document.createElement('span');
+															 s.innerHTML=json[arr3[b]][sp1];
+															 var is = document.createElement('i');
+															 is.innerHTML = '&gt';
+															 s.appendChild(is);
+															 p.appendChild(s);
+														}
+													}
+												 
+												 }
+												 
+										}	
+											
+							
+							});
+							//向右边的div中插入元素和属性
+							ajax.get('jd.json?t='+new Date().getTime(),function(str){
+									 var arr2 =[];
+									 var  arr4 = [];
+									 var json = (new Function('return'+ str))(); 	
+									 for(var arr in json ){
+											arr2.push(arr);				
+									 }
+									 for(var i=0,len=arr2.length;i<len;i++){
+											 arr4 =[];
+											var box = document.getElementById(''+(parseInt(arr2[i])+1)+'');
+										    for(var arr3 in json[i]){
+												arr4.push(arr3);
+												
+											}
+											//console.log(arr4);
+											for(var j=0,lens1=arr4.length; j<lens1;j++){
+												 var boxs = document.createElement('div');
+												 boxs.className = 'box1';
+												 boxs.innerHTML = '<span>'+arr4[j]+'&nbsp;&nbsp;></span>';
+												 for(var k=0,lens2 =json[''+i+''][''+arr4[j]+''].length;k<lens2;k++){
+														//console.log(json[''+i+''][''+arr4[j]+''][k]);
+														var as2 = document.createElement('a');
+														 as2.className ='a1';
+														 as2.innerHTML ='|&nbsp;&nbsp;'+json[''+i+''][''+arr4[j]+''][k]+'';
+														 boxs.appendChild(as2);
+												 }
+												 box.appendChild(boxs);
+											}
+									 }
+									
+									
+									
+									 
+							})
+							
+							
+							
+				</script>
+				<script>
+							
+							
+							
+							var  lis = document.getElementsByTagName('li');
+							var   as = document.getElementsByTagName('a');
+							
+							
+									
+								
+									
+									oU.onmouseover = function(evt){
+										var e = evt || window.event;
+										var target = e.target || e.srcElement;
+										for(var q = 0,len=lis.length;q < len; q++){
+											
+											
+												
+												if(target == lis[q]){
+												target.style.background = '#f0eded';
+												var rbox = document.getElementById(''+(q+1)+'');
+												rbox.style.display="block";
+												main.onmouseover = function(){
+													rbox.style.display="block";
+												}
+												  
+													
+													for(var i=0,len=as.length;i<len;i++){
+														as[i].onmouseover = function(){
+														this.parentNode.style.background ='#f0eded';
+														this.style.color = 'red';
+														
+														}
+														as[i].onmouseout = function(){
+														this.parentNode.style.background ='';
+														this.style.color = 'gray';
+														
+														}
+													}
+													
+													
+												
+												} 
+			
+									}
+									}
+									oU.onmouseout = function(evt){
+										var e = evt || window.event;
+										var target = e.target || e.srcElement;
+										for(var q=0,len=lis.length;q < len; q++){
+								
+												if(target == lis[q]){
+												target.style.background = '';
+												var rbox = document.getElementById(''+(q+1)+'');
+												rbox.style.display="none";
+												main.onmouseout = function(){
+													rbox.style.display="none";
+												}
+												
+												}  
+	
+										}
+										 
+									}
+						
+							
+							
+				</script>
+		</body>
+</html>

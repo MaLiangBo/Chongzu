@@ -19,19 +19,23 @@
     }
 }
 .content{
-    height:720px;
+    min-height: 720px;
     background:#f8f8f8;
     .form_input{
         width: 540px;
+        height:640px;
         margin: 0 auto;
         text-align: center;
         ul{
             padding-top: 20px;
+            height:525px;
             text-align: center;
+            clear: both;
             li{
                 margin-top: 20px;
                 height: 58px;
                 position: relative;
+                line-height:60px;
                 lable{
                     width: 110px;
                     font-size: 18px;
@@ -52,10 +56,183 @@
                     border: 1px solid #efefef;
                     font-size: 16px;
                     color: #252525;
-                    border-color: rgb(230, 0, 18);
+                    outline: none;
+                }
+                .cuowu{
+                    height: 58px;
+                    color: #e70416;
+                    font-size: 18px;
+                    line-height: 60px;
+                    margin-right: 20px;
+                    margin-left: 560px;
+                    text-align: left;
+                    width: 230px;
+                    display: none;
+                    img{
+                        margin-top:23px;
+                    }
+                    p{
+                        display:inline-block;
+                        color: rgb(231, 4, 22);
+                    }
+                }
+                .zhengque{
+                    height: 58px;
+                    color: #e70416;
+                    font-size: 18px;
+                    line-height: 60px;
+                    margin-right: 20px;
+                    margin-left: 560px;
+                    text-align: left;
+                    width: 230px;
+                    display: none;
+                    img{
+                        margin-top:23px;
+                    }
+                }
+            }
+            .picyanzheng{
+                width: 248px;
+                line-height: 38px;
+                background: #fff;
+                padding: 10px 0;
+                float: left;
+                padding-left: 18px;
+                border: 1px solid #efefef;
+                font-size: 16px;
+                color: #252525;
+                outline: none;
+            }
+            .pic_a{
+                width: 130px;
+                height: 58px;
+                line-height: 58px;
+                text-align: center;
+                font-size: 16px;
+                color: #252525;
+                border: 1px solid #e2e2e2;
+                background: #e8e8e8;
+                float: left;
+                margin-left: 10px;
+                img{
+                border: none;
+                max-width: 100%;
+                width: 132px;
+                height: 60px;
+                }
+            }
+            li{
+                .duanxin{
+                    width: 248px;
+                    line-height: 38px;
+                    background: #fff;
+                    padding: 10px 0;
+                    float: left;
+                    padding-left: 18px;
+                    border: 1px solid #efefef;
+                    font-size: 16px;
+                    color: #252525;
+                    outline: none;
+                    }
+                .duanxin_a{
+                    width: 130px;
+                    height: 58px;
+                    line-height: 58px;
+                    text-align: center;
+                    font-size: 16px;
+                    color: #252525;
+                    border: 1px solid #e2e2e2;
+                    background: #e8e8e8;
+                    float: left;
+                    margin-left: 10px;
+                }
+                #duanxinyanzheng{
+                    height:20px;
+                    width:100px;
+                    position: absolute;
+                    top:-15px;
+                }
+            }
+            li{
+                .yonghu{
+                    width: 390px;
+                    line-height: 38px;
+                    background: #fff;
+                    padding: 10px 0;
+                    float: left;
+                    padding-left: 18px;
+                    border: 1px solid #efefef;
+                    font-size: 16px;
+                    color: #252525;
                     outline: none;
                 }
             }
+            li{
+                .mima{
+                    width: 390px;
+                    line-height: 38px;
+                    background: #fff;
+                    padding: 10px 0;
+                    float: left;
+                    padding-left: 18px;
+                    border: 1px solid #efefef;
+                    font-size: 16px;
+                    color: #252525;
+                    outline: none;
+                }
+            }
+            li{
+                .querenmima{
+                    width: 390px;
+                    line-height: 38px;
+                    background: #fff;
+                    padding: 10px 0;
+                    float: left;
+                    padding-left: 18px;
+                    border: 1px solid #efefef;
+                    font-size: 16px;
+                    color: #252525;
+                    outline: none;
+                }
+            }
+            .yuedu{
+                height: 16px;
+                line-height: 16px;
+                padding-left: 130px;
+                position: relative;
+                margin-top: 20px;
+                .yuedu_a{
+                    padding-left: 24px;
+                    display: block;
+                    float: left;
+                    background: url(../img/registrationimg/login-icon.min.png) no-repeat -80px 0;
+                    background-position: -80px -21px;
+                    font-size: 14px;
+                    color: #252525;
+                }
+                .yuedu_span{
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-left:180px;
+                    .yuedu_span_a{
+                        color: #ff5500;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .click_zhuce_btn{
+            display: block;
+            width: 410px;
+            height: 60px;
+            border-radius: 5px;
+            background: #ff5500;
+            line-height: 60px;
+            text-align: center;
+            color: #fff;
+            margin-left: 130px;
+            margin-top: 26px;
+            outline: none;
         }
     }
 }

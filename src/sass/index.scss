@@ -6,6 +6,7 @@ body{
     height:325px;
     background:#f8f8f8;
     padding:0 40px 0 32px;
+    position: relative;
     .box{
     margin:0 auto;
     width:1200px;
@@ -18,6 +19,77 @@ body{
             border-top:0;
             border-radius:0 0 8px 8px ;
             float:left;
+            .caidan_dog{
+                position:absolute;
+                height:310px;
+                width:715px;
+                border:1px solid #ff930a;
+                border-left:none;
+                background:#ffffff;
+                top:-2px;
+                left:221px;
+                display: none;
+    }
+            .nav2:hover{
+                width:188px;
+                li{
+                    border-right:none;
+                    a{
+                        color:orangered;
+                    }
+                }
+                .caidan_dog{
+                    display: block;
+                }
+            }
+            .nav3:hover{
+                width:188px;
+                li{
+                    border-right:none;
+                    a{
+                        color:orangered;
+                    }
+                }
+                .caidan_dog{
+                    display: block;
+                }
+            }
+            .nav4:hover{
+                width:188px;
+                li{
+                    border-right:none;
+                    a{
+                        color:orangered;
+                    }
+                }
+                .caidan_dog{
+                    display: block;
+                }
+            }
+                .nav5:hover{
+                width:188px;
+                li{
+                    border-right:none;
+                    a{
+                        color:orangered;
+                    }
+                }
+                .caidan_dog{
+                    display: block;
+                }
+            }
+                .nav6:hover{
+                width:188px;
+                li{
+                    border-right:none;
+                    a{
+                        color:orangered;
+                    }
+                }
+                .caidan_dog{
+                    display: block;
+                }
+            }
             div{
                 width:171px;
                 height:60px;
@@ -226,12 +298,40 @@ body{
         margin:0 auto;   
         background:#FFFFFF;
         .time_left{
+            position: relative;
             width:233px;
             height:360px;
             float:left;
             img{
                 width:100%;
                 height:100%;
+            }
+            .spic{
+                font-size:20px;
+                text-align:center;
+                margin-top:5px;
+                color:#ff5416;
+            }
+            #spic_1{
+                position:absolute;
+                left:44px;
+                top:197px;
+                height:38px;
+                width:38px;
+            }
+            #spic_2{
+                position:absolute;
+                left:94px;
+                top:197px;
+                height:38px;
+                width:38px;
+            }
+            #spic_3{
+                position:absolute;
+                left:146px;
+                top:197px;
+                height:38px;
+                width:38px;
             }
         }
         .time_right{
@@ -321,13 +421,13 @@ body{
         width:1200px;
         height:321px;
         margin:0 auto;
-//      overflow: hidden;
+        overflow: hidden;
         position:relative;
         .click_one{
             width:42px;
             height:42px;
             position: absolute;
-            left:-20px;
+            left:0px;
             top:140px;
             background:url(../img/indeximg/slider.min.png) no-repeat 0 0;
             a{
@@ -340,7 +440,7 @@ body{
             width:42px;
             height:42px;
             position: absolute;
-            right:-20px;
+            right:0px;
             top:140px;
             background:url(../img/indeximg/slider.min.png) no-repeat -44px 0;
              a{
@@ -350,18 +450,21 @@ body{
             }
         }
         ul{
-        width:1200px;
+//      width:1200px;
         height:321px;
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: space-between;
+//      display:flex;
+//      flex-wrap: wrap;
+//      justify-content: space-between;
+//      align-content: space-between;
+         position:absolute;
         li:hover{border:1px solid #ff5601}
             li{
-                height:308px;
+                float:left;
+                height:307px;
                 width:219px;
                 border:1px solid #e8e8e8;
                 padding:6px;
+                margin-left:7px;
                 background:#ffffff;
                 a{
                     img{

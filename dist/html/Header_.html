@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*初始化*/
+			
+			body,
+			html,
+			p,
+			h2,
+			h3,
+			h4,
+			input,
+			ul,
+			li {
+				margin: 0;
+				padding: 0;
+			}
+			
+			body,
+			html {
+				width: 100%;
+				height: 100%;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			ul li {
+				list-style: none;
+				float: left;
+			}
+			/*top*/
+			
+			.top {
+				height: 80px;
+				background: #f0fbea;
+				padding: 0 40px 0 32px;
+			}
+			
+			.top img {
+				height: 80px;
+				width: 100%;
+			}
+			/*顶部*/
+			
+			.welcome {
+				height: 30px;
+				padding: 0 40px 0 32px;
+				background: linear-gradient(to right, #fe5f04 30%, #ff960c);
+			}
+			
+			.welcome p {
+				font-size: 14px;
+				line-height: 30px;
+				color: #FFFFFF;
+				float: left;
+			}
+			
+			.welcome p a {
+				color: #FFFFFF;
+				text-decoration: none;
+				margin-left: 10px;
+			}
+			
+			.welcome ul {
+				height: 30px;
+				float: right;
+			}
+			
+			.welcome ul li {
+				float: left;
+				list-style: none;
+				width: 77px;
+				text-align: center;
+			}
+			
+			.welcome ul li img {
+				position: absolute;
+				top: 7px;
+				left: 0;
+			}
+			
+			.welcome ul li a {
+				text-decoration: none;
+				font-size: 14px;
+				line-height: 30px;
+				color: #FFFFFF;
+			}
+			
+			.welcome ul li:nth-of-type(4) {
+				position: relative;
+			}
+			
+			.welcome .a4 {
+				margin-left: 13px;
+			}
+			
+			.welcome>img {
+				width: 170px;
+				height: 170px;
+				position: absolute;
+				right: 40px;
+				top: 110px;
+				display: none;
+				z-index: 3;
+			}
+			/*灰色边框*/
+			
+			.gray {
+				height: 30px;
+				background: #f8f8f8;
+			}
+			/*搜索框*/
+			
+			.search {
+				height: 141px;
+				background: #FFFFFF;
+				border-bottom: 1px solid #fe8008;
+				position: relative;
+			}
+			
+			.search .ssearch {
+				width: 1215px;
+				height: 141px;
+				margin: 0 auto;
+			}
+			
+			.search img {
+				float: left;
+			}
+			
+			.search .u1 {
+				height: 28px;
+			}
+			
+			.search .u1 li {
+				height: 28px;
+				width: 80px;
+				text-align: center;
+				line-height: 28px;
+				float: left;
+			}
+			
+			.search .u1 li:nth-of-type(1) {
+				background: linear-gradient(to right top, #ff900b, #ff5100);
+			}
+			
+			.search .u1 li:nth-of-type(2) a {
+				color: #000000
+			}
+			
+			.search .u1 li a {
+				font-size: 14px;
+				color: #FFFFFF;
+			}
+			
+			.search .baby {
+				float: left;
+				margin-left: 50px;
+			}
+			
+			.search .baby .sou {
+				height: 36px;
+			}
+			
+			.search .baby input {
+				height: 32px;
+				width: 495px;
+				outline: none;
+				border: 2px solid #ff5500;
+				border-left: none;
+				float: left;
+				box-shadow: inset 0 1px 0 #e1dfe0;
+			}
+			
+			.search .baby .zoom {
+				float: left;
+				height: 32px;
+				width: 40px;
+				border: 2px solid #ff5500;
+				border-right: none;
+				background: url(../img/indeximg/search.min.png) no-repeat 10px 5px;
+				box-shadow: inset 1px 1px 0 #e1dfe0;
+			}
+			
+			.search .baby .suo {
+				float: left;
+				height: 36px;
+				width: 104px;
+				background: url(../img/indeximg/search.min.png) no-repeat -120px 0;
+			}
+			
+			.search .baby .suo a {
+				display: inline-block;
+				height: 36px;
+				width: 104px;
+			}
+			
+			.search .baby .u2 {
+				height: 24px;
+			}
+			
+			.search .baby .u2 li {
+				padding: 0 4px 0 4px;
+				font-size: 14px;
+				color: #292b1e;
+				line-height: 24px;
+			}
+			
+			.search .baby .u2 li a {
+				font-size: 14px;
+				color: #292b1e;
+			}
+			
+			.search .baby .u2 li:hover a {
+				color: #ff5500;
+			}
+			
+			.search .cart {
+				float: left;
+				width: 178px;
+				height: 34px;
+				margin: 28px 0 0 75px;
+			}
+			
+			.search .classify {
+				position: absolute;
+				bottom: 0;
+				left: 32px;
+				height: 48px;
+				width: 187px;
+				background: linear-gradient(to right top, #fd7306, #ff5500);
+				border-radius: 8px 8px 0 0;
+				border: 1px solid #f25100;
+				border-bottom: 0;
+				text-align: center;
+				line-height: 48px;
+			}
+			
+			.search .classify a {
+				display: block;
+				font-size: 18px;
+				color: #fffff7;
+				height: 48px;
+				width: 187px;
+			}
+			
+			.search p {
+				position: absolute;
+				bottom: 0;
+				left: 219px;
+				height: 48px;
+				width: 105px;
+				text-align: center;
+				line-height: 48px;
+				font-size: 16px;
+			}
+			
+			.search p a {
+				display: block;
+				color: #272226;
+				height: 48px;
+				width: 105px;
+			}
+			/*banner那一块*/
+			
+			.banner {
+				height: 325px;
+				background: #f8f8f8;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="top">
+			<a href="#"><img src="../img/indeximg/top.min.jpg" /></a>
+		</div>
+		<div class="welcome">
+			<p>欢迎光临
+				<a href="#">宠族网</a>
+			</p>
+			<ul>
+				<li>
+					<a href="#">请您登陆</a>
+				</li>
+				<li>
+					<a href="#">免费注册</a>
+				</li>
+				<li>
+					<a href="#">卖家中心</a>
+				</li>
+				<li class="li4">
+					<a href="#" class="a4">手机宠族</a>
+					<img src="../img/indeximg/phone.min.jpg" />
+				</li>
+			</ul>
+			<img src="../img/indeximg/erweima.min.jpg" />
+		</div>
+		<div class="gray"></div>
+		<div class="search">
+			<div class="ssearch">
+				<a href="#"><img src="../img/indeximg/logo.min.png" /></a>
+				<div class="baby">
+					<ul class="u1">
+						<li>
+							<a href="#">宝贝</a>
+						</li>
+						<li>
+							<a href="#">店铺</a>
+						</li>
+					</ul>
+					<div class="sou">
+						<div class="zoom"></div>
+						<input type="text" name="seek" id="seek" value="狗狗主粮" placeholder="狗狗主粮" />
+						<div class="suo">
+							<a href="#"></a>
+						</div>
+					</div>
+					<ul class="u2">
+						<li>热门搜索：</li>
+						<li>
+							<a href="#">狗粮</a>
+						</li>
+						<li>
+							<a href="#">猫粮</a>
+						</li>
+						<li>
+							<a href="#">罐头</a>
+						</li>
+						<li>
+							<a href="#">狗狗零食</a>
+						</li>
+						<li>
+							<a href="#">皇家</a>
+						</li>
+						<li>
+							<a href="#">爱优良</a>
+						</li>
+						<li>
+							<a href="#">心然猫零食</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cart">
+					<a href="#"><img src="../img/indeximg/gouwuche.min.jpg" /></a>
+				</div>
+				<div class="classify">
+					<a href="#">商品分类</a>
+				</div>
+				<p class="shouye">
+					<a href="">首页</a>
+				</p>
+			</div>
+		</div>
+
+		<script src="../js/jquery-1.11.3.js"></script>
+		<script type="text/javascript">
+			//鼠标滑入第四个li且在图片上图片显示
+			$(function() {
+				$('.welcome .li4').hover(
+					function() {
+						$('.welcome > img').css({
+							"display": "block"
+						});
+					},
+					function() {
+						$('.welcome > img').css({
+							"display": "none"
+						});
+					})
+				$('.welcome > img').hover(
+					function() {
+						$('.welcome > img').css({
+							"display": "block"
+						});
+					},
+					function() {
+						$('.welcome > img').css({
+							"display": "none"
+						});
+					})
+
+				//
+
+			})
+		</script>
+	</body>
+
+</html>

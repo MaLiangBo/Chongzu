@@ -5,10 +5,13 @@
 		<link rel="stylesheet" type="text/css" href="css/index.min.css"/>
 		<style type="text/css">
 			#bd{
-				z-index: 20000000;
+				z-index: 200000;
+			}
+			#caidan_dog{
+				z-index: 2000000;
 			}
 		</style>
-		<title></title>
+		<title>宠族网-专注于宠物行业的电商平台</title>
 	</head>
 	<body>
 		<header></header>
@@ -16,6 +19,7 @@
 			<div class = "box">
 				<div class = "nav">
 					<div class ="nav2">
+						<div  id = "caidan_dog" class = "caidan_dog"></div>
 						<ul>
 							<li><a href="#"></a></li>
 							<li><a href="#">狗狗</a></li>
@@ -23,6 +27,7 @@
 						</ul>
 					</div>
 					<div class = "nav3">
+						<div  id = "caidan_dog" class = "caidan_dog"></div>
 						<ul>
 							<li><a href="#"></a></li>
 							<li><a href="#">猫猫</a></li>
@@ -30,6 +35,7 @@
 						</ul>
 					</div>
 					<div class = "nav4">
+						<div  id = "caidan_dog" class = "caidan_dog"></div>
 						<ul>
 							<li><a href="#"></a></li>
 							<li><a href="#">水族</a></li>
@@ -37,6 +43,7 @@
 						</ul>
 					</div>
 					<div class = "nav5">
+						<div  id = "caidan_dog" class = "caidan_dog"></div>
 						<ul>
 							<li><a href="#"></a></li>
 							<li><a href="#">活体</a></li>
@@ -44,6 +51,7 @@
 						</ul>
 					</div>
 					<div class = "nav6">
+						<div  id = "caidan_dog" class = "caidan_dog"></div>
 							<ul>
 							<li><a href="#"></a></li>
 							<li><a href="#">其他</a></li>
@@ -105,6 +113,9 @@
 			<div class="stime">
 				<div class = "time_left">
 					<img src="img/indeximg/daojishi.min.jpg"/>
+					<div id="spic_1" class = "spic"></div>
+					<div id = "spic_2" class = "spic"></div>
+					<div id = "spic_3" class = "spic"></div>
 				</div>
 				<div class="time_right">
 					<ul>
@@ -180,11 +191,11 @@
 			<img src="img/indeximg/tejia.min.png"/>
 		</div>
 		<div class = "sale_content">
-			<div class="ssale_content">
-				<div class = "click_one"><a href="#"></a></div>
-				<div class = "click_two"><a href="#"></a></div>
-				<ul>
-					<!--<li><a href="#">
+			<div class="ssale_content" id = "ssale_content">
+				<!--<div class = "click_one" id = "click_one"><a href="javascript:;"></a></div>
+				<div class = "click_two" id = "click_two"><a href="#"></a></div>-->
+				<ul id = "ul">
+					<li><a href="#">
 						<img src="img/indeximg/img3.min.jpeg" /></a>
 						<p><a href="#">幼猫天然粮2.5kg 耐威克 幼猫天然粮2.5kg</a></p>
 						<div class = "ssale">
@@ -223,7 +234,7 @@
 							<span>￥65</span>
 							<span>去看看</span>
 						</div>
-					</li> 					-->
+					</li> 					
 					<li><a href="#">
 						<img src="img/indeximg/img19.min.jpeg" /></a>
 						<p><a href="#">幼猫天然粮2.5kg 耐威克 幼猫天然粮2.5kg</a></p>
@@ -880,6 +891,38 @@
 				$("header").load("Header.html");
 				$("footer").load("Footer.html")
 			})
+		       var oDiv = document.getElementById("ssale_content")
+			   var oAone = document.getElementById("click_one")
+			   var oAtwo = document.getElementById("click_two")
+			   var oUl = document.getElementById("ul")
+			   var oLi = oUl.getElementsByTagName("li")
+			   var timer = null;
+			   var speed = 10;
+			   oUl.innerHTML += oUl.innerHTML
+			   
+			   oUl.style.width = oLi[0].offsetWidth*oLi.length + "px"
+			   function move(){
+			     if(oUl.offsetLeft < -oUl.offsetWidth/2){
+				    oUl.style.left = 0
+				 }else if(oUl.offsetLeft > 0){
+				    oUl.style.left = -oUl.offsetWidth/2 + "px"
+				 }
+				 oUl.style.left = oUl.offsetLeft + speed + "px"
+			   }
+			   timer = setInterval(move,50)
+			   oAone.onclick = function(){
+			      speed = -10
+			   }
+			   oAtwo.onclick = function(){
+			     speed = 10
+			   }
+			    oDiv.onmouseover = function(){
+				   clearInterval(timer)
+				} 
+				oDiv.onmouseout = function(){
+				   timer = setInterval(move,50)
+			}
+				ListChange('ssale_content',1000,5,3000);
 		</script>
 	</body>
 </html>

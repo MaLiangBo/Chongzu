@@ -15,10 +15,10 @@ gulp.task('sass',function(){
 	.pipe(gulp.dest('./dist/css'));
 })
 gulp.task('imagemin',function(){
-	gulp.src('./src/img/registrationimg/*')
+	gulp.src('./src/img/cartimg/*')
 	.pipe(imagemin())
 	.pipe(rename({"suffix" : ".min"}))
-	.pipe(gulp.dest('./dist/img/registrationimg'));
+	.pipe(gulp.dest('./dist/img/cartimg'));
 })
 gulp.task('js',function(){
 	gulp.src('./src/js/*.js')

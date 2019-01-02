@@ -2,8 +2,130 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../css/cart.min.css"/>
 		<title></title>
 	</head>
 	<body>
+		<div class="welcome">
+			<p>欢迎光临
+				<a href="#">宠族网</a>
+			</p>
+			<ul>
+				<li>
+					<a href="#">请您登陆</a>
+				</li>
+				<li>
+					<a href="#">免费注册</a>
+				</li>
+				<li>
+					<a href="#">卖家中心</a>
+				</li>
+				<li class="li4">
+					<a href="#" class="a4">手机宠族</a>
+					<img src="../img/indeximg/phone.min.jpg" />
+				</li>
+			</ul>
+			<img src="../img/indeximg/erweima.min.jpg" />
+		</div>
+		<div class="search">
+			<div class="ssearch">
+				<a href="#"><img src="../img/indeximg/logo.min.png" /></a>
+				<div class="baby">
+					<ul class="u1">
+						<li>
+							<a href="#">宝贝</a>
+						</li>
+						<li>
+							<a href="#">店铺</a>
+						</li>
+					</ul>
+					<div class="sou">
+						<div class="zoom"></div>
+						<input type="text" name="seek" id="seek" value="狗狗主粮" placeholder="狗狗主粮" />
+						<div class="suo">
+							<a href="#"></a>
+						</div>
+					</div>
+					<ul class="u2">
+						<li>热门搜索：</li>
+						<li>
+							<a href="#">狗粮</a>
+						</li>
+						<li>
+							<a href="#">猫粮</a>
+						</li>
+						<li>
+							<a href="#">罐头</a>
+						</li>
+						<li>
+							<a href="#">狗狗零食</a>
+						</li>
+						<li>
+							<a href="#">皇家</a>
+						</li>
+						<li>
+							<a href="#">爱优良</a>
+						</li>
+						<li>
+							<a href="#">心然猫零食</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cart">
+					<a href="#"><img src="../img/indeximg/gouwuche.min.jpg" /></a>
+				</div>
+				<div class="classify">
+					<a href="#">购物车</a>
+				</div>
+			</div>
+		</div>
+		<div class = "content">
+			<div class="shopping">
+				<div class = "gw_cart">
+					<p>购物车里还没有商品哦~快去逛逛吧~</p>
+					<a href="#">去逛逛</a>
+				</div>
+			</div>
+		</div>
+		<footer></footer>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<script src="../js/jquery-1.11.3.js"></script>
+		<script type="text/javascript">
+			//鼠标滑入第四个li且在图片上图片显示
+			$(function() {
+				$('.welcome .li4').hover(
+					function() {
+						$('.welcome > img').css({
+							"display": "block"
+						});
+					},
+					function() {
+						$('.welcome > img').css({
+							"display": "none"
+						});
+					})
+				$('.welcome > img').hover(
+					function() {
+						$('.welcome > img').css({
+							"display": "block"
+						});
+					},
+					function() {
+						$('.welcome > img').css({
+							"display": "none"
+						});
+					})
+				$('footer').load('Footer_.html');
+			})
+		</script>
 	</body>
 </html>
