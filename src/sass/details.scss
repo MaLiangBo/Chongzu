@@ -1,0 +1,892 @@
+@import 'public';
+           .welcome {
+                height: 30px;
+                padding: 0 40px 0 32px;
+                background: linear-gradient(to right, #fe5f04 30%, #ff960c);
+            }
+            
+            .welcome p {
+                font-size: 14px;
+                line-height: 30px;
+                color: #FFFFFF;
+                float: left;
+            }
+            
+            .welcome p a {
+                color: #FFFFFF;
+                text-decoration: none;
+                margin-left: 10px;
+            }
+            
+            .welcome ul {
+                height: 30px;
+                float: right;
+            }
+            
+            .welcome ul li {
+                float: left;
+                list-style: none;
+                width: 77px;
+                text-align: center;
+            }
+            
+            .welcome ul li img {
+                position: absolute;
+                top: 7px;
+                left: 0;
+            }
+            
+            .welcome ul li a {
+                text-decoration: none;
+                font-size: 14px;
+                line-height: 30px;
+                color: #FFFFFF;
+            }
+            
+            .welcome ul li:nth-of-type(4) {
+                position: relative;
+            }
+            
+            .welcome .a4 {
+                margin-left: 13px;
+            }
+            
+            .welcome>img {
+                width: 170px;
+                height: 170px;
+                position: absolute;
+                right: 40px;
+                top: 30px;
+                display: none;
+                z-index: 3;
+            }
+             .search {
+                height: 171px;
+                background: #FFFFFF;
+                border-bottom: 1px solid #fe8008;
+                position: relative;
+            }
+            
+            .search .ssearch {
+                width: 1215px;
+                height: 171px;
+                margin: 0 auto;
+            }
+            
+            .search img {
+                float: left;
+                margin-top:25px;
+            }
+            
+            .search .u1 {
+                height: 28px;
+            }
+            
+            .search .u1 li {
+                height: 28px;
+                width: 80px;
+                text-align: center;
+                line-height: 28px;
+                float: left;
+            }
+            
+            .search .u1 li:nth-of-type(1) {
+                background: linear-gradient(to right top, #ff900b, #ff5100);
+            }
+            
+            .search .u1 li:nth-of-type(2) a {
+                color: #000000
+            }
+            
+            .search .u1 li a {
+                font-size: 14px;
+                color: #FFFFFF;
+            }
+            
+            .search .baby {
+                float: left;
+                margin-left: 50px;
+                margin-top:25px;
+            }
+            
+            .search .baby .sou {
+                height: 36px;
+            }
+            
+            .search .baby input {
+                height: 32px;
+                width: 495px;
+                outline: none;
+                border: 2px solid #ff5500;
+                border-left: none;
+                float: left;
+                box-shadow: inset 0 1px 0 #e1dfe0;
+            }
+            
+            .search .baby .zoom {
+                float: left;
+                height: 32px;
+                width: 40px;
+                border: 2px solid #ff5500;
+                border-right: none;
+                background: url(../img/indeximg/search.min.png) no-repeat 10px 5px;
+                box-shadow: inset 1px 1px 0 #e1dfe0;
+            }
+            
+            .search .baby .suo {
+                float: left;
+                height: 36px;
+                width: 104px;
+                background: url(../img/indeximg/search.min.png) no-repeat -120px 0;
+            }
+            
+            .search .baby .suo a {
+                display: inline-block;
+                height: 36px;
+                width: 104px;
+            }
+            
+            .search .baby .u2 {
+                height: 24px;
+            }
+            
+            .search .baby .u2 li {
+                padding: 0 4px 0 4px;
+                font-size: 14px;
+                color: #292b1e;
+                line-height: 24px;
+            }
+            
+            .search .baby .u2 li a {
+                font-size: 14px;
+                color: #292b1e;
+            }
+            
+            .search .baby .u2 li:hover a {
+                color: #ff5500;
+            }
+            
+            .search .cart {
+                float: left;
+                width: 178px;
+                height: 34px;
+                margin: 28px 0 0 75px;
+            }
+            .search .classify {
+                position: absolute;
+                bottom: 0;
+                left: 32px;
+                height: 48px;
+                width: 187px;
+                background: linear-gradient(to right top, #fd7306, #ff5500);
+                border-radius: 8px 8px 0 0;
+                border: 1px solid #f25100;
+                border-bottom: 0;
+                text-align: center;
+                line-height: 48px;
+            }
+            
+            .search .classify a {
+                display: block;
+                font-size: 18px;
+                color: #fffff7;
+                height: 48px;
+                width: 187px;
+            }
+            
+            .search p {
+                position: absolute;
+                bottom: 0;
+                left: 219px;
+                height: 48px;
+                width: 105px;
+                text-align: center;
+                line-height: 48px;
+                font-size: 16px;
+            }
+            
+            .search p a {
+                display: block;
+                color: #272226;
+                height: 48px;
+                width: 105px;
+            }
+            .content{
+                height:7840px;
+                .scontent{
+                    width:1200px;
+                    height:7840px;
+                    margin:0 auto;
+                    position: relative;
+                    overflow: hidden;
+                    .nav{
+                        display: none;
+                        height:315px;
+                        width:187px;
+                        background:linear-gradient(to right top,#fe9307,#ff5300);
+                        border:1px solid #f05304;
+                        border-top:0;
+                        border-radius:0 0 8px 8px ;
+                        float:left;
+                        position:absolute;
+                        top:-1px;
+                        left:0;
+                        .caidan_dog{
+                            position:absolute;
+                            height:310px;
+                            width:715px;
+                            border:1px solid #ff930a;
+                            border-left:none;
+                            background:#ffffff;
+                            top:-2px;
+                            left:189px;
+                            display: none;
+                            dl{
+                                height:60px;
+                                margin-left:25px;
+                                dt{
+                                    font-size:16px;
+                                    color:#ff5500;
+                                    padding-left:13px;
+                                }
+                                dd{
+                                    float:left;
+                                    padding:0 13px 0 13px;
+                                    a{
+                                        font-size:14px;
+                                        color:#000000;
+                                    }
+                                    a:hover{
+                                        color:#ff5500;
+                                    }
+                                }
+                            }
+                        }
+                        .nav2:hover{
+                            width:188px;
+                            li{
+                                border-right:none;
+                                a{
+                                    color:orangered;
+                                }
+                            }
+                            .caidan_dog{
+                                display: block;
+                            }
+                        }
+                        .nav3:hover{
+                            width:188px;
+                            li{
+                                border-right:none;
+                                a{
+                                    color:orangered;
+                                }
+                            }
+                            .caidan_dog{
+                                display: block;
+                            }
+                        }
+                        .nav4:hover{
+                            width:188px;
+                            li{
+                                border-right:none;
+                                a{
+                                    color:orangered;
+                                }
+                            }
+                            .caidan_dog{
+                                display: block;
+                            }
+                        }
+                            .nav5:hover{
+                            width:188px;
+                            li{
+                                border-right:none;
+                                a{
+                                    color:orangered;
+                                }
+                            }
+                            .caidan_dog{
+                                display: block;
+                            }
+                        }
+                            .nav6:hover{
+                            width:188px;
+                            li{
+                                border-right:none;
+                                a{
+                                    color:orangered;
+                                }
+                            }
+                            .caidan_dog{
+                                display: block;
+                            }
+                        }
+                        div{
+                            width:171px;
+                            height:60px;
+                            margin:1px auto;
+                        }
+                        ul{
+                            height:60px;
+                            background:#ffffff;
+                            a{
+                                display:inline-block;
+                                font-size:15px;
+                                color:#173223;
+                            }
+                        }
+                        .nav2 ul li:nth-of-type(1) a{
+                            width:30px;
+                            height:30px;
+                            background:url(../img/indeximg/dogcat.min.png) no-repeat -198px 3px;
+                            margin:15px 18px 0 24px;
+                        }
+                        .nav2 ul li:nth-of-type(2) a{
+                            line-height:60px;
+                        }
+                        .nav2 ul li:nth-of-type(3) a{
+                            width:15px;
+                            height:15px;
+                            background:url(../img/indeximg/dogcat.min.png) no-repeat -375px -12px;
+                            margin:22px 0 0 24px
+                        }
+                        .nav3 ul li:nth-of-type(1) a{
+                            width:30px;
+                            height:30px;
+                            background:url(../img/indeximg/dogcat.min.png) no-repeat -229px 3px;
+                            margin:15px 18px 0 24px;
+                        }
+                        .nav3 ul li:nth-of-type(2) a{
+                            line-height:60px;
+                        }
+                        .nav3 ul li:nth-of-type(3) a{
+                            width:15px;
+                            height:15px;
+                            background:url(../img/indeximg/dogcat.min.png) no-repeat -375px -12px;
+                            margin:22px 0 0 24px
+                        }
+                        .nav4 ul li:nth-of-type(1) a{
+                            width:30px;
+                            height:30px;
+                            background:url(../img/indeximg/dogcat.min.png) no-repeat -260px 3px;
+                            margin:15px 18px 0 24px;
+                        }
+                        .nav4 ul li:nth-of-type(2) a{
+                            line-height:60px;
+                        }
+                        .nav4 ul li:nth-of-type(3) a{
+                            width:15px;
+                            height:15px;
+                            background:url(../img/indeximg/dogcat.min.png) no-repeat -375px -12px;
+                            margin:22px 0 0 24px
+                        }
+                        .nav5 ul li:nth-of-type(1) a{
+                            width:30px;
+                            height:30px;
+                            background:url(../img/indeximg/dogcat.min.png) no-repeat -291px 3px;
+                            margin:15px 18px 0 24px;
+                        }
+                        .nav5 ul li:nth-of-type(2) a{
+                            line-height:60px;
+                        }
+                        .nav5 ul li:nth-of-type(3) a{
+                            width:15px;
+                            height:15px;
+                            background:url(../img/indeximg/dogcat.min.png) no-repeat -375px -12px;
+                            margin:22px 0 0 24px
+                        }
+                        .nav6 ul li:nth-of-type(1) a{
+                            width:30px;
+                            height:30px;
+                            background:url(../img/indeximg/dogcat.min.png) no-repeat -321px 3px;
+                            margin:15px 18px 0 24px;
+                        }
+                        .nav6 ul li:nth-of-type(2) a{
+                            line-height:60px;
+                        }
+                        .nav6 ul li:nth-of-type(3) a{
+                            width:15px;
+                            height:15px;
+                            background:url(../img/indeximg/dogcat.min.png) no-repeat -375px -12px;
+                            margin:22px 0 0 24px
+                        }
+                    }
+                    .cart{
+                        height:525px;
+                        width:1198px;
+                        border:1px solid #f3f3f3;
+                        margin-top:30px;
+                        position: relative;
+                        .xianshi{
+                            height:398px;
+                            width:398px;
+                            border:1px solid #ececec;
+                            position: absolute;
+                            top:19px;
+                            left:420px;
+                            display: none;
+                        }
+                        .cart_left{
+                            height:506px;
+                            width:400px;
+                            padding:19px 19px 0 19px;
+                            float:left;
+//                          .img_box{
+//                              height:398px;
+//                              width:398px;
+//                              border:1px solid #ececec;
+//                          }
+//                          .smallimg_box{
+//                              width:196px;
+//                              height:60px;
+//                              display: flex;
+//                              justify-content: space-around;
+//                              margin-left:87px;
+//                              margin-top:10px;
+//                              .smalling_box{
+//                                  display: inline-block;
+//                                  height:58px;
+//                                  width:58px;
+//                                  border:1px solid #dcdcdc;
+//                              }
+
+
+.small-img{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.clearfix:before,
+.clearfix:after{
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.magnifier{
+    width: 400px;
+    position: relative;
+    margin-top: 5px;
+    margin-left: 0;
+}
+.magnifier-container{
+    width: 400px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ddd;
+}
+.move-view{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-image: url('../img/detailsimg/move.min.png');
+}
+.images-cover{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.images-cover img{
+    position: absolute;
+}
+.magnifier-assembly{
+    height: 92px;
+    overflow: hidden;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.magnifier-btn{
+    position: absolute;
+    font-family: "宋体";
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -40px;
+}
+.magnifier-btn span{
+    line-height: 80px;
+    height: 80px;
+    width: 20px;
+    background-color: #6e6e6e;
+    color: #fff;
+    display: block;
+    z-index: 9998;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.magnifier-btn .magnifier-btn-left{
+    float: left;
+}
+.magnifier-btn .magnifier-btn-right{
+    float: right;
+}
+.magnifier-line{
+    position: relative;
+    overflow: hidden;
+    height: 92px;
+}
+.magnifier-line ul{
+    display: block;
+    font-size: 0;
+    width: 10000%;
+    position: absolute;
+    left: 0;
+    z-index: 9997;
+}
+.magnifier-line li{
+    float: left;
+    width: 100px;
+    cursor: pointer;
+}
+.magnifier-line ul > .active .small-img{
+    border-color: #bbb;
+}
+.small-img{
+    height: 78px;
+    padding: 1px;
+    margin: 5px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.small-img img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.magnifier-view{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: -105%;
+    top: 0;
+    z-index: 9999;
+    background-color: #fff;
+    display: none;
+    overflow: hidden;
+}
+.magnifier-view img{
+    display: block;
+}
+.animation03{
+    transition: all 0.3s ease-in 0.1s;
+    -ms-transition: all 0.3s ease-in 0.1s;
+    -moz-transition: all 0.3s ease-in 0.1s;
+    -webkit-transition: all 0.3s ease-in 0.1s;
+    -o-transition: all 0.3s ease-in 0.1s;
+}
+                            
+                            .fenxiang{
+                                height:21px;
+                                width:395px;
+                                margin-top:30px;
+                                ul{
+                                    float:left;
+                                    li{
+                                        margin-left:7px;
+                                    }
+                                }
+                                img{
+                                    float: right;;
+                                }
+                            }
+                        }
+                        .cart_middle{
+                            width:465px;
+                            height:506px;
+                            float:left;
+                            padding:19px 12px 0 12px;
+                            h3{
+                                font-weight:600;
+                            }
+                            .jiage{
+                                font-size:14px;
+                                width:453px;
+                                height:46px;
+                                background:#f8f8f8;
+                                color:#1d2925;
+                                line-height:46px;
+                                padding-left:10px;
+                                margin-top:17px;
+                                span{
+                                   font-size:20px;
+                                   color:#fd5800;
+                                   font-weight:600;
+                                }
+                            }
+                            p{
+                                margin-top:14px;
+                            }
+                            p:nth-of-type(6){
+                                display: inline-block;
+                            }
+                             .jiajian{
+                                margin-top:15px;
+                                width:112px;
+                                height:32px;
+                                background:#ebebeb;
+                                display:inline-block;
+                                position: relative;
+                                input{
+                                    width:50px;
+                                    height:30px;
+                                    color:#000000;
+                                    border: none;
+                                    position: absolute;
+                                    top:1px;
+                                    left:32px;
+                                    outline: none;
+                                    text-align: center;
+                                }
+                                a{
+                                    display: inline-block;
+                                    width:32px;
+                                    height:32px;
+                                    background:#ebebeb;
+                                    text-align: center;
+                                    line-height:32px;
+                                    color:#98999b;
+                            }
+                            a:nth-of-type(1){
+                                float:left;
+                            }
+                            a:nth-of-type(2){
+                                float:right;
+                            }
+                        }
+                        .mai{
+                            height:55px;
+                            width:376px;
+                            margin:0 auto;
+                            margin-top:30px;
+                            padding-top:10px;
+                            .mai_left{
+                                width:160px;
+                                height:46px;
+                                background:#ff5a00;
+                                border-radius: 8px;
+                                float:left;
+                                a{
+                                    display: block;
+                                    width:160px;
+                                    height:46px;
+                                    font-size:16px;
+                                    color:#FFFFFF;
+                                    text-align:center;
+                                    line-height:46px;
+                                }
+                            }
+                             .mai_right{
+                                width:160px;
+                                height:46px;
+                                background:#f49b01;
+                                border-radius: 8px;
+                                float:right;
+                                a{
+                                    display: block;
+                                    width:160px;
+                                    height:46px;
+                                    font-size:16px;
+                                    color:#FFFFFF;
+                                    text-align:center;
+                                    line-height:46px;
+                                }
+                            }
+                        }
+                    }
+                    .cart_right{
+                        width:225px;
+                        height:398px;
+                        background:#f8f8f8;
+                        float:left;
+                        margin-top:20px;
+                        margin-left:28px;
+                        .cart_right_img{
+                            width:118px;
+                            height:118px;
+                            border: 1px solid #eaeaea;
+                            margin-top:30px;
+                            margin-left:52px;
+                            img{
+                                width:118px;
+                                height:118px;
+                            }
+                        }
+                        .p{
+                            height:15px;
+                            width:175px;
+                            margin:0 auto;
+                            font-size:14px;
+                            margin-top:10px;
+                        }
+                        .star{
+                            display: block;
+                            margin:6px auto;
+                        }
+                        .allshangpin{
+                            width:225px;
+                            height:48px;
+                            margin-top:20px;
+                            .soupet{
+                                width:98px;
+                                height:36px;
+                                border-radius: 8px;
+                                background:url(../img/detailsimg/shop_icon.min.png) no-repeat -2px -29px;
+                                float:left;
+                                a{
+                                    display: block;
+                                    width:98px;
+                                height:36px;
+                                }
+                            }
+                            .soubendian{
+                                 width:98px;
+                                height:36px;
+                                border-radius: 8px;
+                                background:url(../img/detailsimg/shop_icon.min.png) no-repeat -111px -29px;
+                                float:right;
+                                a{
+                                    display: block;
+                                    width:98px;
+                                height:36px;
+                                }
+                            }
+                        }
+                        .call_me{
+                            width:100px;
+                            height:25px;
+                            margin-left:62px;
+background:url(../img/detailsimg/shop_icon.min.png) no-repeat 0 0px;
+                            a{
+                                display: block;
+                                width:100px;
+                            height:25px;
+                            }
+                        }
+                        .jindian{
+                            width:223px;
+                            height:48px;
+                            background:#ffffff;
+                            margin-top:60px;    
+                            border:1px solid #f8f8f8;
+                            position: relative;
+                            a{
+                                display: block;
+                                width:223px;
+                                height:48px;
+                                color:#322223;
+                            }
+                            img{
+                                margin-left:145px;
+                            }
+                            p{
+                                display: inline-block;
+                                position: absolute;
+                                top:13px;
+                                left:62px;
+                            }
+                        }
+                    }
+                }
+                .xiangqing{
+                    width:1200px;
+                    overflow: hidden;
+                    margin-top:24px;
+                    .xiangqin_left{
+                        height:806px;
+                        width:156px;
+                        border: 1px solid #f3f3f3;
+                        padding: 0px 15px;
+                        float:left;
+                        h3{
+                            position: relative;
+                            overflow: hidden;
+                            height: 54px;
+                            text-align: center;
+                            background: url(../img/listimg/line.min.png) repeat-x left center;
+                            font-size: 24px;
+                            line-height: 54px;
+                            font-weight: normal;
+                            span{
+                                padding: 0px 5px;
+                                display: inline-block;
+                                vertical-align: middle;
+                                background-color: #ffffff;
+                                font-size: 16px;
+                                color: #252525;
+                                z-index: 5;
+                                margin-top: -3px;
+                            }
+                        }
+                        ul{
+                            li{
+                                width: 138px;
+                                height: 68px;
+                                border: 1px solid #ececec;
+                                margin: 0px auto;
+                                margin-bottom: 9px;
+                                padding: 6px 6px 9px 6px;
+                                background: #fff;
+                                a{
+                                    outline: none;
+                                    img{
+                                        border: none;
+                                        vertical-align: top;
+                                        max-width: 100%;
+                                        width: 138px;
+                                        height: 68px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .xiangqing_right{
+                        width:1000px;
+                        float:right;
+                        .right_xiangqing{
+                            height:38px;
+                            border:1px solid #f0f0f0;
+                            border-bottom:1px solid #fc6303;
+                            .sright_xiangqing{
+                                height:38px;
+                                width:160px;
+                                text-align: center;
+                                line-height:38px;
+                                background:#fc6303;
+                                color:#ffffff;
+                            }
+                        }
+                        .canshu{
+                            height:38px;
+                            border:1px solid #f0f0f0;
+                            .canshu_size{
+                                height:38px;
+                                width:160px;
+                                text-align: center;
+                                line-height:38px;
+                            }
+                        }
+                        .chandi{
+                            height:300px;
+                            border:1px solid #f0f0f0;
+                            margin-top:15px;
+                            p{
+                                font-size:16px;
+                                margin-top:5px;
+                            }
+                            p:last-of-type{
+                                background:#ff9800;
+                            }
+                        }
+                        .banner{
+                            img{
+                                width:100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }

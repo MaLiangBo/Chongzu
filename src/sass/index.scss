@@ -29,7 +29,27 @@ body{
                 top:-2px;
                 left:221px;
                 display: none;
-    }
+                dl{
+                    height:60px;
+                    margin-left:25px;
+                    dt{
+                        font-size:16px;
+                        color:#ff5500;
+                        padding-left:13px;
+                    }
+                    dd{
+                        float:left;
+                        padding:0 13px 0 13px;
+                        a{
+                            font-size:14px;
+                            color:#000000;
+                        }
+                        a:hover{
+                            color:#ff5500;
+                        }
+                    }
+                }
+            }
             .nav2:hover{
                 width:188px;
                 li{
@@ -414,21 +434,12 @@ body{
         bottom:0;
         margin:auto;
     }
-}
-.sale_content{
-    height:321px;
-    .ssale_content{
-        width:1200px;
-        height:321px;
-        margin:0 auto;
-        overflow: hidden;
-        position:relative;
-        .click_one{
+            .click_one{
             width:42px;
             height:42px;
             position: absolute;
-            left:0px;
-            top:140px;
+            left:140px;
+            top:8px;
             background:url(../img/indeximg/slider.min.png) no-repeat 0 0;
             a{
                 display: inline-block;
@@ -440,8 +451,8 @@ body{
             width:42px;
             height:42px;
             position: absolute;
-            right:0px;
-            top:140px;
+            right:140px;
+            top:8px;
             background:url(../img/indeximg/slider.min.png) no-repeat -44px 0;
              a{
                 display: inline-block;
@@ -449,6 +460,15 @@ body{
                 height:42px;
             }
         }
+}
+.sale_content{
+    height:321px;
+    .ssale_content{
+        width:1200px;
+        height:321px;
+        margin:0 auto;
+        overflow: hidden;
+        position: relative;
         ul{
 //      width:1200px;
         height:321px;

@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="../css/cart.min.css"/>
-		<title></title>
+		<title>欢迎光临:购物车</title>
 	</head>
 	<body>
 		<div class="welcome">
@@ -86,6 +86,97 @@
 					<a href="#">去逛逛</a>
 				</div>
 			</div>
+			
+		</div>
+				<div class = "sale">
+			<div class = "click_one" id = "click_one"><a href="javascript:;"></a></div>
+			<div class = "click_two" id = "click_two"><a href="javascript:;"></a></div>
+		</div>
+		<div class = "sale_content">
+			<div class="ssale_content" id = "ssale_content">
+				<ul id = "ul">
+					<li><a href="#">
+						<img src="../img/indeximg/img3.min.jpeg" /></a>
+						<p><a href="#">幼猫天然粮2.5kg 耐威克 幼猫天然粮2.5kg</a></p>
+						<div class = "ssale">
+							<span>￥45</span>
+							<span>去看看</span>
+						</div>
+					</li> 
+					<li><a href="#">
+						<img src="../img/indeximg/img2.min.jpeg" /></a>
+						<p><a href="#">幼猫天然粮2.5kg 耐威克 幼猫天然粮2.5kg</a></p>
+						<div class = "ssale">
+							<span>￥46</span>
+							<span>去看看</span>
+						</div>
+					</li> 					
+					<li><a href="#">
+						<img src="../img/indeximg/img4.min.jpeg" /></a>
+						<p><a href="#">幼猫天然粮2.5kg 耐威克 幼猫天然粮2.5kg</a></p>
+						<div class = "ssale">
+							<span>￥75</span>
+							<span>去看看</span>
+						</div>
+					</li> 					
+					<li><a href="#">
+						<img src="../img/indeximg/img14.min.jpeg" /></a>
+						<p><a href="#">幼猫天然粮2.5kg 耐威克 幼猫天然粮2.5kg</a></p>
+						<div class = "ssale">
+							<span>￥67</span>
+							<span>去看看</span>
+						</div>
+					</li> 					
+					<li><a href="#">
+						<img src="../img/indeximg/img13.min.jpeg" /></a>
+						<p><a href="#">幼猫天然粮2.5kg 耐威克 幼猫天然粮2.5kg</a></p>
+						<div class = "ssale">
+							<span>￥65</span>
+							<span>去看看</span>
+						</div>
+					</li> 					
+					<li><a href="#">
+						<img src="../img/indeximg/img19.min.jpeg" /></a>
+						<p><a href="#">幼猫天然粮2.5kg 耐威克 幼猫天然粮2.5kg</a></p>
+						<div class = "ssale">
+							<span>￥65</span>
+							<span>去看看</span>
+						</div>
+					</li> 					
+					<li><a href="#">
+						<img src="../img/indeximg/img20.min.jpeg" /></a>
+						<p><a href="#">幼猫天然粮2.5kg 耐威克 幼猫天然粮2.5kg</a></p>
+						<div class = "ssale">
+							<span>￥95</span>
+							<span>去看看</span>
+						</div>
+					</li> 					
+					<li><a href="#">
+						<img src="../img/indeximg/img12.min.jpeg" /></a>
+						<p><a href="#">幼猫天然粮2.5kg 耐威克 幼猫天然粮2.5kg</a></p>
+						<div class = "ssale">
+							<span>￥63</span>
+							<span>去看看</span>
+						</div>
+					</li> 					
+					<li><a href="#">
+						<img src="../img/indeximg/img18.min.jpeg" /></a>
+						<p><a href="#">幼猫天然粮2.5kg 耐威克 幼猫天然粮2.5kg</a></p>
+						<div class = "ssale">
+							<span>￥45</span>
+							<span>去看看</span>
+						</div>
+					</li> 					
+					<li><a href="#">
+						<img src="../img/indeximg/img15.min.jpeg" /></a>
+						<p><a href="#">幼猫天然粮2.5kg 耐威克 幼猫天然粮2.5kg</a></p>
+						<div class = "ssale">
+							<span>￥67</span>
+							<span>去看看</span>
+						</div>
+					</li> 				
+				</ul>
+			</div>
 		</div>
 		<footer></footer>
 		
@@ -99,6 +190,8 @@
 		
 		
 		<script src="../js/jquery-1.11.3.js"></script>
+		<script src="../js/jquery.cookie.js"></script>
+		<script src="../js/cart.min.js"></script>
 		<script type="text/javascript">
 			//鼠标滑入第四个li且在图片上图片显示
 			$(function() {
@@ -126,6 +219,8 @@
 					})
 				$('footer').load('Footer_.html');
 			})
+			
+			ListChange('ssale_content',1000,5,3000);
 		</script>
 	</body>
 </html>
