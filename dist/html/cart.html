@@ -3,19 +3,20 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="../css/cart.min.css"/>
+		<link rel="shortcut icon" type="image/x-icon" href="../img/indeximg/favicon.min.ico" />
 		<title>欢迎光临:购物车</title>
 	</head>
 	<body>
 		<div class="welcome">
 			<p>欢迎光临
-				<a href="#">宠族网</a>
+				<a href="../index.html">宠族网</a>
 			</p>
 			<ul>
 				<li>
-					<a href="#">请您登陆</a>
+					<a href="login.html">请您登陆</a>
 				</li>
 				<li>
-					<a href="#">免费注册</a>
+					<a href="registration.html">免费注册</a>
 				</li>
 				<li>
 					<a href="#">卖家中心</a>
@@ -29,7 +30,7 @@
 		</div>
 		<div class="search">
 			<div class="ssearch">
-				<a href="#"><img src="../img/indeximg/logo.min.png" /></a>
+				<a href="../index.html"><img src="../img/indeximg/logo.min.png" /></a>
 				<div class="baby">
 					<ul class="u1">
 						<li>
@@ -72,7 +73,7 @@
 					</ul>
 				</div>
 				<div class="cart">
-					<a href="#"><img src="../img/indeximg/gouwuche.min.jpg" /></a>
+					<a href="cart.html"><img src="../img/indeximg/gouwuche.min.jpg" /></a>
 				</div>
 				<div class="classify">
 					<a href="#">购物车</a>
@@ -83,11 +84,100 @@
 			<div class="shopping">
 				<div class = "gw_cart">
 					<p>购物车里还没有商品哦~快去逛逛吧~</p>
-					<a href="#">去逛逛</a>
+					<a href="../html/list.html">去逛逛</a>
 				</div>
 			</div>
 			
 		</div>
+		<div class = "cont_shopping">
+			<div class = "scont_shopping">
+				<div class = "shopping_top">
+					<div class = "quanxuan">
+						<form action="">
+							<input type="checkbox" name="" id="" value="" />
+							全选
+							<p>商品</p>
+						</form>
+					</div>
+					<div class = "xiaoji">
+						<p>单价</p>
+						<p>数量</p>
+						<p>小计</p>
+						<p>操作</p>
+					</div>
+				</div>
+				<!--<div class = "shopping_cont">
+					<div class = "shopping_img">
+						<img src="../img/cartimg/180117071400826_200.min.jpeg"/>
+					</div>
+					<p>WDJ推荐美国荒野盛宴天然无谷成犬狗粮 鹿肉羊肉豌豆配方 5磅/2kg</p>
+				</div>-->
+				<div class="cart-goodBox-goods">
+					<div class="cart-goodbox">
+						<div class="cart-goodPic"><img src="../img/cartimg/180117071400826_200.min.jpeg" ></div>
+						<div class="cart-goodDescribe">
+							<span class="cart-goodDescribe-word" id="cart-goodDescribe-word">WDJ推荐美国荒野盛宴天然无谷成犬狗粮 鹿肉羊肉豌豆配方 5磅/2kg</span>
+							<span class="cart-goodDescribe-size" id="cart-goodDescribe-size">成犬狗粮</span>
+						</div>
+					</div>
+					<div class="cart-goodbox cart-goodPrice">
+						<span>￥200.00</span>
+					</div>
+					<div class="cart-goodbox cart-goodCount">
+						<a href="javascript:;" class="cart-goodMinus" id="cart-goodMinus">-</a>
+						<input type="text" class="cart-goodNum" id="cart-goodNum" value="1"></span>
+						<a href="javascript:;" class="cart-goodAdd" id="cart-goodAdd">+</a>
+					</div>
+					<div class="cart-goodbox cart-discount">
+						<span>￥0.00</span>
+					</div>
+					<div class="cart-goodbox cart-points">
+						<span>200</span>
+					</div>
+					<div class="cart-goodbox cart-littleSum">
+						<span>￥200.00</span>
+					</div>
+					<div class="cart-goodbox cart-operate">
+						<a href="javascript:;" class="cart-collect" id="cart-collect">收藏</a>&nbsp;&nbsp;|&nbsp;
+						<a href="javascript:;" class="cart-remove" id="cart-remove">移除</a>
+					</div>
+				</div>
+			
+			
+							<div class="cart-goodBox-cashier">
+					<p class="cart-final alltag">
+						<span>商品总金额：</span>
+						<span>￥200.00</span>
+					</p>
+					<p class="cart-final">
+						<span>订单优惠金额：</span>
+						<span>￥0.00</span>
+					</p>
+					<p class="cart-allPrice">							<span>总金额：</span>
+						<span>￥200.00</span>
+					</p>
+				</div>
+				<div class="cart-goodBox-cashierBtn">
+					<div class="cart-cashierBtnLt">
+						<a href="javascript:;" class="cart-more">清除购物车</a>
+					</div>
+					<div class="cart-cashierBtnRt">
+						<a href="../html/list.html" class="cart-continue">继续购物</a>
+						<a href="#" class="cart-buyit">去结算 ></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 				<div class = "sale">
 			<div class = "click_one" id = "click_one"><a href="javascript:;"></a></div>
 			<div class = "click_two" id = "click_two"><a href="javascript:;"></a></div>
@@ -192,6 +282,9 @@
 		<script src="../js/jquery-1.11.3.js"></script>
 		<script src="../js/jquery.cookie.js"></script>
 		<script src="../js/cart.min.js"></script>
+		<script src="../js/shopping.min.js">
+			
+		</script>
 		<script type="text/javascript">
 			//鼠标滑入第四个li且在图片上图片显示
 			$(function() {
@@ -218,9 +311,11 @@
 						});
 					})
 				$('footer').load('Footer_.html');
+				
+				ListChange('ssale_content',1000,5,3000);
 			})
 			
-			ListChange('ssale_content',1000,5,3000);
+			
 		</script>
 	</body>
 </html>
